@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+
+!.config
+
+!.config/hypr
+!.config/hypr/*
+
+!.config/nwg-bar
+!.config/nwg-bar/*
+
+!.config/waybar
+!.config/waybar/*
+
+!.config/btop
+!.config/btop/*
