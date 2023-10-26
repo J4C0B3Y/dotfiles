@@ -116,7 +116,7 @@
     background-color: #E06C75;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging {
     background-color: #98C379;
 }
 
