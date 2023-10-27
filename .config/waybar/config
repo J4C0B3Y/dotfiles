@@ -74,7 +74,8 @@
             "portable": "",
             "car": "",
             "default": ["", "", ""]
-        }
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
 
     "custom/notifications": {
