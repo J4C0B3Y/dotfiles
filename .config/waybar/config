@@ -85,7 +85,7 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "nwg-bar"
+        "on-click": "sleep 0.1 && nwg-bar"
     }
 }
 
