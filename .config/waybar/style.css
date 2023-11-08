@@ -134,3 +134,13 @@
 #custom-power {
     background-color: #E06C75;
 }
+
+menu, tooltip {
+    background-color: #ABB2BF;
+    padding: 4px 8px;
+}
+
+menu label, tooltip label {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
