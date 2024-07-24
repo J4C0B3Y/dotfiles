@@ -1,0 +1,146 @@
+/* General Setup */
+* {
+    all: unset;
+    font-family: JetBrains Mono, FontAwesome;
+    font-size: 13px;
+    border-radius: 6px;
+    color: #282C34;
+    font-weight: bold;
+}
+
+/* Module Setup */
+#temperature,
+#clock,
+#battery,
+#window,
+#network,
+#pulseaudio,
+#custom-notifications,
+#custom-power,
+#tray {
+    padding: 0 10px;
+}
+
+/* Temperature */
+#temperature {
+    background-color: #E5C07B;
+}
+
+#temperature.critical {
+    background-color: #E06C75;
+}
+
+/* Workspaces */
+#workspaces button {
+    border-radius: 0;
+    padding: 0 10px;
+    background-color: #ABB2BF;
+    margin-right: 1px;
+}
+
+#workspaces button.active {
+    background-color: #56B6C2;
+}
+
+#workspaces button.urgent {
+    background-color: #E06C75;
+}
+
+#workspaces > *:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#workspaces > *:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-right: 0;
+}
+
+/* Tray */
+#tray {
+    background-color: #ABB2BF;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #E5C07B;
+}
+
+/* Window */
+#window {
+    background-color: #56B6C2;
+    margin: 0 10px;
+}
+
+#waybar.empty #window {
+    background-color: transparent;
+}
+
+/* Audio */
+#pulseaudio {
+    background-color: #98C379;
+}
+
+#pulseaudio.muted {
+    background-color: #E06C75;
+}
+
+/* Network */
+#network {
+    background-color: #61AFEF;
+}
+
+#network.disconnected {
+    background-color: #E06C75;
+}
+
+/* Battery */
+#battery {
+    background-color: #98C379;
+}
+
+#battery.good {
+    background-color: #61AFEF;
+}
+
+#battery.warning {
+    background-color: #E5C07B;
+}
+
+#battery.critical {
+    background-color: #E06C75;
+}
+
+#battery.charging {
+    background-color: #98C379;
+}
+
+/* Clock */
+#clock {
+    background-color: #C678DD;
+}
+
+/* Notifications */
+#custom-notifications {
+    background-color: #C678DD;
+}
+
+/* Power */
+#custom-power {
+    background-color: #E06C75;
+}
+
+menu, tooltip {
+    background-color: #ABB2BF;
+    padding: 4px 8px;
+}
+
+menu label, tooltip label {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

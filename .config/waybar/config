@@ -1,0 +1,92 @@
+{
+    // General Setup
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "margin": "10 10 2 10",
+    "spacing": 10,
+
+    // Module Positions
+    "modules-left": ["clock", "battery", "temperature", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "network", "pulseaudio", "custom/notifications", "custom/power"],
+
+    // Module Configuration
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%d/%m/%Y}"
+    },
+
+    "battery": {
+        "interval": 1,
+        "states": {
+            "good": 80,
+            "warning": 25,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-time": "{H}h {M}m",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": ""
+    },
+
+    "temperature": {
+        "thermal-zone": 1,
+        "critical-threshold": 50,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+
+    "hyprland/window": {
+        "max-length": 60
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ipaddr}",
+        "tooltip-format": "Strength: {signalStrength}%",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "⚠ No Internet",
+        "format-alt": "{ipaddr}"
+    },
+
+    "pulseaudio": {
+        "scroll-step": 0.8,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
+        "format-source": " {volume}%",
+        "tooltip": false,
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+
+    "custom/notifications": {
+        "format": "",
+        "on-click": "sleep 0.1 && swaync-client -t &",
+        "on-click-right": "swaync-client -C"
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "sleep 0.1 && nwg-bar"
+    }
+}
+

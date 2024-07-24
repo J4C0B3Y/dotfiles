@@ -1,0 +1,14 @@
+[
+  {
+    "label": "",
+    "exec": "hyprctl dispatch exit"
+  },
+  {
+    "label": "",
+    "exec": "systemctl reboot"
+  },
+  {
+    "label": "",
+    "exec": "systemctl poweroff"
+  }
+]
