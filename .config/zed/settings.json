@@ -1,0 +1,38 @@
+{
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark Pro"
+  },
+  "cursor_blink": true,
+  "current_line_highlight": "gutter",
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "features": {
+    "inline_completion_provider": "none",
+    "copilot": false
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "1"
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "gutter": {
+    "code_actions": false,
+    "folds": false,
+    "runnables": false
+  },
+  "scroll_beyond_last_line": "vertical_scroll_margin"
+}
