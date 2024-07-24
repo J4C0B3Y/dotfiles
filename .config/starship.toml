@@ -1,0 +1,25 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = false
+
+format = "$directory$character"
+right_format = "$username$sudo$hostname"
+
+continuation_prompt = "[∙](bright-black) "
+
+[username]
+format = "[$user]($style)"
+style_user = "yellow"
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "@[$hostname]($style)"
+style = "dimmed yellow"
+
+[sudo]
+disabled = false
+style = "yellow"
+format = "[*]($style)"
+
+[character]
