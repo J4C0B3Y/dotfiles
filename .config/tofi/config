@@ -1,0 +1,79 @@
+
+font = "JetBrains Mono"
+font-size = 24
+hint-font = true
+
+
+text-color = #FFFFFF
+
+	prompt-background = #00000000
+	prompt-background-padding = 0
+	prompt-background-corner-radius = 0
+
+	placeholder-color = #FFFFFFA8
+	placeholder-background = #00000000
+	placeholder-background-padding = 0
+	placeholder-background-corner-radius = 0
+
+	input-background = #00000000
+	input-background-padding = 0
+	input-background-corner-radius = 0
+
+	default-result-background = #00000000
+	default-result-background-padding = 0
+	default-result-background-corner-radius = 0
+
+	selection-color = #a11abc
+	selection-background = #00000000
+	selection-background-padding = 0
+	selection-background-corner-radius = 0
+
+	selection-match-color = #00000000
+
+	text-cursor-style = bar
+	text-cursor-corner-radius = 0
+	prompt-text = " "
+
+	placeholder-text = "Search..."
+
+	num-results = 0
+	result-spacing = 0
+	horizontal = false
+	min-input-width = 0
+
+	width = 1280
+	height = 720
+
+	background-color = #1B1D1E
+
+	outline-width = 0
+
+	outline-color = #080800
+
+	# Width of the border in pixels.
+	border-width = 0
+
+	# Border color
+	border-color = #F92672
+
+	# Radius of window corners in pixels.
+	corner-radius = 10
+
+	# Padding between borders and text. Can be pixels or a percentage.
+	padding-top = 8
+	padding-bottom = 8
+	padding-left = 8
+	padding-right = 8
+
+	# Whether to clip text drawing to be within the specified padding. This
+	# is mostly important for allowing text to be inset from the border,
+	# while still allowing text backgrounds to reach right to the edge.
+	clip-to-padding = true
+	scale = false
+
+hide-cursor = true
+history = true
+matching-algorithm = fuzzy
+require-match = true
+print-index = true
+drun-launch = true
